@@ -36,14 +36,18 @@ export function Effects() {
     thickness: { value: 10, min: 0, max: 10 },
     ior: { value: 1.45, min: 0, max: 2 }
   })
+  const loader = new LUTCubeLoader()
+loader.load('/path/to/neutral_lut.cube', (texture) => {
+  console.log('Neutral LUT texture loaded:', texture)
+})
   return (
     enabled && (
       <EffectComposer disableNormalPass>
         <SSR {...props} />
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0} intensity={1.5} />
         <LUT lut={texture} />
+        <LUTCubeLoader 
       </EffectComposer>
     )
-  export LUTCubeLoader()
   )
 }
