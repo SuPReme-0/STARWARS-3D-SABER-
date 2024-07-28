@@ -6,7 +6,7 @@ import { Effects } from './Effects'
 
 export default function App() {
   return (
-    <Canvas gl={{ antialias: false, stencil: false }} camera={{ position: [5, 0, 0], fov: 80 }}>
+    <Canvas gl={{ antialias: true, stencil: false }} camera={{ position: [5, 0, 0], fov: 80 }}>
       <ambientLight intensity={0.9} />
       <spotLight
         angle={0.12}
