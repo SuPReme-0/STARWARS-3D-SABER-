@@ -1,5 +1,5 @@
 import { useLoader } from '@react-three/fiber'
-import { EffectComposer, SSR, Bloom, LUT, LUTCubeLoader} from '@react-three/postprocessing'
+import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing'
 
 import { useControls } from 'leva'
 
@@ -43,7 +43,6 @@ export function Effects() {
         <SSR {...props} />
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0} intensity={1.5} />
         <LUT lut={texture} />
-        <LUTCodeLoader lc={texture} />
       </EffectComposer>
     )
   )
