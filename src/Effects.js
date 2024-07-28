@@ -1,12 +1,12 @@
 import { useLoader } from '@react-three/fiber'
-import { EffectComposer, SSR, Bloom, LUT,LUTCubeLoader} from '@react-three/postprocessing'
+import { EffectComposer, SSR, Bloom, LUT, LUTCubeLoader} from '@react-three/postprocessing'
 
 import { useControls } from 'leva'
 
 export function Effects() {
   const texture = useLoader(LUTCubeLoader, '/F-6800-STD.cube')
   const { enabled, ...props } = useControls({
-    enabled: tr
+    enabled: true,
     temporalResolve: true,
     STRETCH_MISSED_RAYS: true,
     USE_MRT: true,
