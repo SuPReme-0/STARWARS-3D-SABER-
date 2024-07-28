@@ -1,5 +1,5 @@
 import { useLoader } from '@react-three/fiber';
-import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing';
+import { EffectComposer, SSR, Bloom, LUT, LUTCubeLoader} from '@react-three/postprocessing';
 import { useControls } from 'leva';
 export function Effects() {
   const texture = useLoader( LUTCubeLoader , '/F-6800-STD.cube');
@@ -34,7 +34,7 @@ export function Effects() {
     thickness: { value: 10, min: 0, max: 10 },
     ior: { value: 1.45, min: 0, max: 2 }
   })
-  
+export ( LUTCubeLoader );  
   return (
     enabled && (
       <EffectComposer disableNormalPass>
