@@ -1,6 +1,6 @@
 import { useLoader } from '@react-three/fiber'
 import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing'
-import {LUTCubeLoader} from 'three/addons/loaders/LUTCubeLoader.js'
+import {LUTCubeLoader} from 'package /vercel/path0/node_modules/three'
 
 import { useControls } from 'leva'
 
