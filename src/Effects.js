@@ -46,7 +46,6 @@ loader.load('/path/to/neutral_lut.cube', (texture) => {
         <SSR {...props} />
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0} intensity={1.5} />
         <LUT lut={texture} />
-        <LUTCubeLoader 
       </EffectComposer>
     )
   )
