@@ -44,5 +44,6 @@ export function Effects() {
         <LUT lut={texture} />
       </EffectComposer>
     )
+  export LUTCubeLoader()
   )
 }
