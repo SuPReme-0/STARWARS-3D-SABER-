@@ -1,5 +1,7 @@
 import { useLoader } from '@react-three/fiber'
-import { EffectComposer, SSR, Bloom, LUT, LUTCubeLoader } from '@react-three/postprocessing'
+import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing'
+import {LUTCubeLoader} from 'three/addons/loaders/LUTCubeLoader.js'
+
 import { useControls } from 'leva'
 
 export function Effects() {
