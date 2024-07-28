@@ -1,7 +1,7 @@
 import { useLoader } from '@react-three/fiber';
 import { EffectComposer, SSR, Bloom, LUT, LUTCubeLoader} from '@react-three/postprocessing';
 import { useControls } from 'leva';
-export const {LUTCubeLoader } = PostProcessing;
+export const {LUTCubeLoader } ;
 export function Effects() {
   const texture = useLoader( LUTCubeLoader , '/F-6800-STD.cube');
   const { enabled, ...props } = useControls({
