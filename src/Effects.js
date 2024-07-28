@@ -1,4 +1,3 @@
-npm install postprocessing@latest;
 import { useLoader } from '@react-three/fiber'
 import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing'
 import { LUTCubeLoader } from '@react-three/postprocessing'
@@ -48,4 +47,5 @@ export function Effects() {
       </EffectComposer>
     )
   )
+  export { LUTCubeLoader } from '@react-three/postprocessing'
 }
