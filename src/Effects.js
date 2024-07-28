@@ -3,9 +3,9 @@ import { EffectComposer, SSR, Bloom, LUT} from '@react-three/postprocessing';
 import { LUTCubeLoader } from '@react-three/postprocessing';
 
 import { useControls } from 'leva';
-
+export { LUTCubeLoader } from '@react-three/postprocessing';
 export function Effects() {
-  const texture = useLoader( LUTCubeLoader, '/F-6800-STD.cube');
+  const texture = useLoader( LUTCubeLoader , '/F-6800-STD.cube');
   const { enabled, ...props } = useControls({
     enabled: true,
     temporalResolve: true,
@@ -48,4 +48,4 @@ export function Effects() {
     )
   )
 }
-  export { LUTCubeLoader } from '@react-three/postprocessing';
+ 
