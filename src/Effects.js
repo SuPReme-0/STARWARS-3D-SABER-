@@ -42,5 +42,5 @@ export function Effects() {
         <LUT lut={texture} />
       </EffectComposer>
     )
-export ( LUTCubeLoader) from '@react-three/postprocessing';
+export ( LUTCubeLoader) from '@react-three/postprocessing'
 )
