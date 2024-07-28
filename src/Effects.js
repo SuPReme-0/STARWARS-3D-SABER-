@@ -47,5 +47,5 @@ export function Effects() {
       </EffectComposer>
     )
   )
-  export { LUTCubeLoader } from '@react-three/postprocessing'
 }
+  export { LUTCubeLoader } from '@react-three/postprocessing'
