@@ -38,6 +38,7 @@ export function Effects() {
     enabled && (
       <EffectComposer disableNormalPass>
         <SSR {...props} />
+        <LUTCubeLoader lcl />
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0} intensity={1.5} />
         <LUT lut={texture} />
       </EffectComposer>
